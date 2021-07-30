@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Frijole&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Frijole", cursive;
+  color: #6CBBAD;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(121.42deg, #FF8D6A 4.31%, #FDB091 49.43%, #FBE38E 100.89%);
+}
+
+.cats {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.cats__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cats__top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 84rem;
+  height: 32rem;
+  background: linear-gradient(99.05deg, rgba(255, 145, 171, 0.2) 0%, rgba(251, 227, 142, 0.126) 99.39%);
+  border: 4px solid rgba(255, 255, 255, 0.45);
+  border-radius: 72px;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+}
+
+.card__cats {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.card__top {
+  top: -40px;
+  left: -100px;
+}
+
+.card__bottom {
+  bottom: -100px;
+  right: -200px;
+  left: auto !important;
+}
+
+.text {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text__title {
+  padding: 40px 0 0 0;
+  font-size: 9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.text__subtitle {
+  text-align: center;
+  font-family: "Aladin", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #7694E4;
+}
+
+.btn {
+  margin-top: 42px;
+}
+
+.btn__item {
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #495059;
+  background-color: #FF91AB;
+  padding: 22px 90px;
+  border-radius: 50px;
+  -webkit-transition: color .2s ease-out, background-color .2s ease-out;
+  transition: color .2s ease-out, background-color .2s ease-out;
+  -webkit-box-shadow: 0px 4px 50px #FBE38E;
+          box-shadow: 0px 4px 50px #FBE38E;
+  outline: none;
+}
+
+.btn__item:hover {
+  background-color: #7694E4;
+  color: #FF91AB;
+}
+
+@media (max-width: 1680px) {
+  .cats__svg {
+    width: 34rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cats__top {
+    top: 20px;
+  }
+  .cats__bottom {
+    left: -30px;
+    bottom: 20px;
+  }
+  .cats__svg {
+    width: 28rem;
+  }
+  .card {
+    width: 60rem;
+    height: 26rem;
+  }
+  .card__top {
+    top: -40px;
+  }
+  .card__bottom {
+    bottom: -90px;
+  }
+  .text__title {
+    font-size: 5rem;
+  }
+  .text__subtitle {
+    font-size: 4.6rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  .card {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .cats__bottom {
+    left: 10px;
+    bottom: 120px;
+  }
+  .cats__top {
+    right: 20px;
+    top: 140px;
+  }
+  .cats__space {
+    width: 12rem !important;
+  }
+  .cats__svg {
+    width: 10rem;
+  }
+  .cats__svg-card {
+    width: 6rem;
+  }
+  .card {
+    width: 16rem;
+    height: 20rem;
+    border-radius: 20px;
+  }
+  .card__top {
+    top: -60px;
+    left: -40px;
+  }
+  .card__bottom {
+    right: -100px;
+    left: 0;
+    bottom: -70px;
+  }
+  .text__item {
+    margin-bottom: 46px;
+  }
+  .text__title {
+    font-size: 2rem;
+  }
+  .text__subtitle {
+    font-size: 3rem;
+  }
+  .btn__item {
+    font-size: 1.2rem;
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cats__bottom {
+    left: -20px;
+    bottom: 170px;
+  }
+  .cats__top {
+    right: -10px;
+    top: 160px;
+  }
+  .card__top {
+    top: -60px;
+  }
+  .card__bottom {
+    right: -100px;
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cats__bottom {
+    left: -20px;
+    bottom: 30px;
+  }
+  .cats__top {
+    right: -10px;
+    top: 40px;
+  }
+  .card__top {
+    top: -60px;
+  }
+  .card__bottom {
+    right: -100px;
+    bottom: -80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
