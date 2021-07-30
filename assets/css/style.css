@@ -170,7 +170,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   .cats__bottom {
     left: 10px;
     bottom: 120px;
